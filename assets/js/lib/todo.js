@@ -29,10 +29,10 @@ var text = [];
 function addToDo(){
 	$(".todo-list").append(
 		"<li class='main-todo-item'>" +
-		"<span class='main-close-btn'><i class='fa fa-times fa-2x'></i></span>" + 
-		 " " + toDo.val() + "<i class='fa fa-caret-down' aria-hidden='true'></i>" + 
+		"<button class='main-close-btn'><span class='fa fa-times fa-2x'></span></button>" + 
+		 " " + toDo.val() + "<span class='fa fa-caret-down' aria-hidden='true'></span>" + 
 		"<ul class='main'><input type='text' placeholder='Dodaj podzadanie do listy' class='second-input'>" +
-		"<i class='fa fa-plus add-btn'></i></ul>" + "</li>"
+		"<span class='fa fa-plus add-btn'></span></ul>" + "</li>"
 		 );
 	// Clear input placeholder
 		toDo.val("");
@@ -43,7 +43,7 @@ $(".todo-list").on("click", ".add-btn", function(){
 	if(text.val() === ""){
 		text.addClass("wrong");
 	} else {
-	$(this).parent().append("<li class='todo-items'><span class='sm-close-btn'><i class='fa fa-times'></i></span>" + text.val() + "</li>");
+	$(this).parent().append("<li class='todo-items'><button class='sm-close-btn'><span class='fa fa-times'></span></button>" + text.val() + "</li>");
 	};
 	// Clear input placeholder
 	text.val("");

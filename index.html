@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-	<title>Todo Lisfdsfsft</title>
+	<title>Todo List</title>
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;subset=latin-ext" rel="stylesheet">
@@ -9,39 +9,58 @@
 </head>
 <body>
 
-<div class="todo-container">
-	<h1>To-Do List</h1>
+<main class="todo-container">
+
+	<header>
+		<h1>To-Do List</h1>
+	</header>
+
 	<!-- Input and plus button -->
-	<div class="input-section">
+	<section class="input-section">
 		<input type="text" placeholder="Dodaj zadanie do listy" id="first-input" class="main-input">
-		<div class="add-btn" id="main-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
-	</div>
-		<!-- Add new todo -->
+		<button class="add-btn" id="main-btn"><span class="fa fa-plus" aria-hidden="true"></span></button>
+	</section>
+
+	<!-- Add new todo -->
 	<ul class="todo-list">
 		<li class="main-todo-item">
-		<span class="main-close-btn"><i class="fa fa-times fa-2x"></i></span>
-		Zrobić zakupy<i class="fa fa-caret-down" aria-hidden="true"></i>
+			<button class="main-close-btn">
+				<span class="fa fa-times fa-2x"></span>
+			</button>
+			<p>Zrobić zakupy</p>
+			<span class="fa fa-caret-down" aria-hidden="true"></span>
 			<ul class="main">
 				<input type="text" placeholder="Dodaj podzadanie do listy" class="second-input">
-				<i class="fa fa-plus add-btn" aria-hidden="true"></i>
-				<li class="todo-items"><span class="sm-close-btn"><i class="fa fa-times"></i></span>Masło</li>
-				<li class="todo-items"><span class="sm-close-btn"><i class="fa fa-times"></i></span>Chleb</li>
+				<span class="fa fa-plus add-btn" aria-hidden="true"></span>
+				<li class="todo-items">
+					<button class="sm-close-btn">
+						<i class="fa fa-times"></i>
+					</button>
+					<p>Masło</p>
+				</li>
+
+				<li class="todo-items">
+					<button class="sm-close-btn">
+						<span class="fa fa-times"></span>
+					</button>
+					<p>Chleb</p>
+				</li>
 			</ul>
 		</li>
 		<li class="main-todo-item">
-		<span class="main-close-btn"><i class="fa fa-times fa-2x"></i></span>
-		Powiesić pranie<i class="fa fa-caret-down" aria-hidden="true"></i>
+			<button class="main-close-btn">
+				<span class="fa fa-times fa-2x"></span>
+			</button>
+			<p>Powiesić pranie</p>
+			<span class="fa fa-caret-down" aria-hidden="true"></span>
 			<ul class="main">
 				<input type="text" placeholder="Dodaj podzadanie do listy" class="second-input">
-				<i class="fa fa-plus add-btn" aria-hidden="true"></i>
+				<span class="fa fa-plus add-btn" aria-hidden="true"></span>
 			</ul>
 		</li>
 	</ul>
-		
+</main>
 
-	
-	
-</div>
 <script type="text/javascript" src="assets/js/lib/todo.js"></script>
 
 
