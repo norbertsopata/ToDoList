@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>Todo Lisfdsfsft</title>
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;subset=latin-ext" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/lib/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+<div class="todo-container">
+	<h1>To-Do List</h1>
+	<!-- Input and plus button -->
+	<div class="input-section">
+		<input type="text" placeholder="Dodaj zadanie do listy" id="first-input" class="main-input">
+		<div class="add-btn" id="main-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+	</div>
+		<!-- Add new todo -->
+	<ul class="todo-list">
+		<li class="main-todo-item">
+		<span class="main-close-btn"><i class="fa fa-times fa-2x"></i></span>
+		Zrobić zakupy<i class="fa fa-caret-down" aria-hidden="true"></i>
+			<ul class="main">
+				<input type="text" placeholder="Dodaj podzadanie do listy" class="second-input">
+				<i class="fa fa-plus add-btn" aria-hidden="true"></i>
+				<li class="todo-items"><span class="sm-close-btn"><i class="fa fa-times"></i></span>Masło</li>
+				<li class="todo-items"><span class="sm-close-btn"><i class="fa fa-times"></i></span>Chleb</li>
+			</ul>
+		</li>
+		<li class="main-todo-item">
+		<span class="main-close-btn"><i class="fa fa-times fa-2x"></i></span>
+		Powiesić pranie<i class="fa fa-caret-down" aria-hidden="true"></i>
+			<ul class="main">
+				<input type="text" placeholder="Dodaj podzadanie do listy" class="second-input">
+				<i class="fa fa-plus add-btn" aria-hidden="true"></i>
+			</ul>
+		</li>
+	</ul>
+		
+
+	
+	
+</div>
+<script type="text/javascript" src="assets/js/lib/todo.js"></script>
+
+
+</body>
+</html>

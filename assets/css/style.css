@@ -1,0 +1,197 @@
+h1, ul, input{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+	background: #000000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(right, #000000, #53346D);
+	background: -o-linear-gradient(right, #000000, #53346D);
+	background: linear-gradient(to left, #000000, #53346D); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+
+
+.todo-container{
+	width: 400px;
+	margin: 100px auto;
+	
+}
+
+.done{
+	color: gray;
+	text-decoration: line-through;
+}
+
+h1{
+	background: #524982;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: 400;
+	color: #f0f0f0;
+}
+
+
+.main-input, 
+.second-input{
+width: 90%;
+}
+
+
+input{
+	width: 100%;
+	box-sizing: border-box;
+	height: 40px;
+	font-size: 15px;
+	border: none;
+	padding-left: 10px;
+}
+
+input:focus{
+	border: 2px solid #8cddf8;
+	outline: none;
+}
+
+.todo-items input{
+	padding: 5px 10px;
+}
+
+.add-btn,
+.second-btn{
+	display: inline-block;
+	width: 10%;
+	float: right;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: green;
+	background: white;
+}
+
+.add-btn:hover{
+	background: #dfdde7;
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	background:#f0f0f0;
+	font-size: 14px;
+	font-weight: 100;
+	
+}
+
+.input-section{
+	display: inline-block;
+	width: 100%;
+}
+
+.todo-list{
+	width: 100%;
+}
+
+
+.main-todo-item{
+	font-weight: 600;
+
+}
+
+
+.main-todo-item:nth-child(odd){
+	background: #dfdde7;
+	
+}
+
+.main-todo-item:hover .main-close-btn{
+	width: 40px;
+	transition: 0.3s 0.1s linear;
+}
+
+.main-todo-item:hover .main-close-btn i{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.main{
+	display: none;
+}
+
+.todo-items{
+	font-size: 13px;
+}
+
+.visible{
+	display: block;
+}
+
+
+.main-close-btn{
+	display: inline-block;
+	margin-right: 20px;
+	background: red;
+	text-align: center;
+	height: 40px;
+	width: 0px;
+	line-height: 40px;
+	transition: 0.3s linear;
+}
+
+.sm-close-btn{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+i{
+	vertical-align: middle;
+}
+
+.main-close-btn i {
+	opacity: 0;
+	color: white;
+	transition: 0.3s linear;
+}
+
+.sm-close-btn i{
+	color: #232323;
+	opacity: 0.5;
+
+	
+}
+
+.fa-caret-down{
+	transition: 0.3s ease-in-out;
+	margin-left: 5px;
+}
+
+.fa-times{
+	transition: 0.3s ease-in-out;
+}
+
+
+.todo-items .fa-times:hover{
+	transform: scale(1.1);
+	color: red;
+	cursor: pointer;
+}
+
+.arrow-up{
+transform: rotate(180deg);
+}
+
+.wrong{
+	border: 1px solid red;
+}
+
+
+
+
